@@ -47,12 +47,10 @@ function handleClick(e) {
   }
 }
 
-function endGame(draw) {
-  if (draw) {
-    winningMessageTextElement.innerText = 'Draw!'
-  } else {
-    winningMessageTextElement.innerText = `${circleTurn ? "O's" : "X's"} Wins!`
-  }
+function endGame(draw) {  
+  let inText;
+  draw ? inText= 'Draw!': inText = `${circleTurn ? "O's" : "X's"} Wins!`
+  winningMessageTextElement.innerText = inText;
   winningMessageElement.classList.add('show')
 }
 
