@@ -47,12 +47,10 @@ function handleClick(e) {
   }
 }
 
-function endGame(draw) {
-  if (draw) {
-    winningMessageTextElement.innerText = 'Draw!'
-  } else {
-    winningMessageTextElement.innerText = `${circleTurn ? "O's" : "X's"} Wins!`
-  }
+function endGame(draw) {  
+  let inText;
+  draw ? inText= 'Draw!': inText = `${circleTurn ? "O's" : "X's"} Wins!`
+  winningMessageTextElement.innerText = inText;
   winningMessageElement.classList.add('show')
 }
 
@@ -73,12 +71,8 @@ function swapTurns() {
 function setBoardHoverClass() {
   board.classList.remove(X_CLASS)
   board.classList.remove(CIRCLE_CLASS)
-  if (circleTurn) {
-    board.classList.add(CIRCLE_CLASS)
-  } else {
-    board.classList.add(X_CLASS)
-  }
-}
+  circleTurn ?  board.classList.add(CIRCLE_CLASS):board.classList.add(X_CLASS)
+ }
 
 function checkWin(currentClass) {
   return WINNING_COMBINATIONS.some(combination => {
