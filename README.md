@@ -1,5 +1,5 @@
 # JavaScript-Tic-Tac-Toe
-### This is a simple Tic-Tac-Toe game also called as Noughts and Crosses game. <img align= right src="https://user-images.githubusercontent.com/56513661/95007830-b7b21e80-0631-11eb-8510-849eb97f0bbd.gif" width="150px">
+### This is a simple Tic-Tac-Toe game also called as Noughts and Crosses game. <img align= right src="https://user-images.githubusercontent.com/56513661/95007830-b7b21e80-0631-11eb-8510-849eb97f0bbd.gif" width="130px">
 
 ## There are 3 cases in this game:
 * X' Win
