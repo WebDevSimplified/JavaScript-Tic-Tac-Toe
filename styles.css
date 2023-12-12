@@ -9,6 +9,7 @@
 
 body {
   margin: 0;
+  background-color: #c7f9cc;
 }
 
 .board {
@@ -109,7 +110,7 @@ body {
 .board.circle .cell:not(.x):not(.circle):hover::after {
   width: calc(var(--mark-size) * .7);
   height: calc(var(--mark-size) * .7);
-  background-color: white;
+  background-color: #c7f9cc;
 }
 
 .winning-message {
